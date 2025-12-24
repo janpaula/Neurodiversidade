@@ -1,0 +1,14 @@
+body {
+  background: linear-gradient(135deg, #020617, #1e293b);
+  font-family: system-ui, sans-serif;
+}
+
+a {
+  width: 100%;
+  max-width: 420px;
+  transition: transform 0.15s ease;
+}
+
+a:active {
+  transform: scale(0.97);
+}

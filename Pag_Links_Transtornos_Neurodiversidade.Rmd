@@ -1,0 +1,55 @@
+---
+title: "Neurodiversidade"
+output:
+  html_document:
+    self_contained: true
+    theme: flatly
+---
+<div class="filter-buttons">
+<button onclick="filterSelection('all')">Todas</button>
+<button onclick="filterSelection('tdah')">TDAH</button>
+<button onclick="filterSelection('autismo')">Autismo</button>
+<button onclick="filterSelection('comorbidades')">Comorbidades</button>
+</div>
+
+---
+
+<div class="card tdah">
+<h3>ADHD and Executive Function</h3>
+<p>Revisão abrangente sobre déficits executivos no TDAH e seus impactos cognitivos.</p>
+<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3016271/" target="_blank">Ler artigo</a>
+</div>
+
+<div class="card tdah">
+<h3>Neurobiology of ADHD</h3>
+<p>Discussão sobre bases neurobiológicas e circuitos cerebrais envolvidos no TDAH.</p>
+<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3724232/" target="_blank">Ler artigo</a>
+</div>
+
+---
+
+<div class="card autismo">
+<h3>Autism as a Neurodevelopmental Condition</h3>
+<p>Visão moderna do autismo dentro do paradigma da neurodiversidade.</p>
+<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5559537/" target="_blank">Ler artigo</a>
+</div>
+
+<div class="card autismo">
+<h3>Sensory Processing in Autism</h3>
+<p>Análise sobre processamento sensorial atípico em adultos autistas.</p>
+<a href="https://www.frontiersin.org/articles/10.3389/fnint.2020.00041/full" target="_blank">Ler artigo</a>
+</div>
+
+---
+
+<div class="card comorbidades">
+<h3>ADHD and Binge Eating Disorder</h3>
+<p>Estudo sobre a relação entre TDAH e transtorno de compulsão alimentar.</p>
+<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6521052/" target="_blank">Ler artigo</a>
+</div>
+
+<div class="card comorbidades">
+<h3>Neurodiversity and Mental Health</h3>
+<p>Discussão crítica sobre saúde mental dentro do modelo de neurodiversidade.</p>
+<a href="https://www.tandfonline.com/doi/full/10.1080/17522439.2017.1296086" target="_blank">Ler artigo</a>
+</div>
