@@ -159,3 +159,22 @@ function filterSelection(category) {
 
 </body>
 </html>
+
+<script>
+function filterSelection(category) {
+  const cards = document.getElementsByClassName("card");
+
+  for (let i = 0; i < cards.length; i++) {
+    cards[i].classList.remove("show");
+
+    if (category === "all") {
+      cards[i].classList.add("show");
+    } else if (cards[i].classList.contains(category)) {
+      cards[i].classList.add("show");
+    }
+  }
+}
+</script>
+</body>
+</html>
+
