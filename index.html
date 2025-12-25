@@ -1,40 +1,112 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Links | Neurodiversidade</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title>Neurodiversidade</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: white;
-      text-align: center;
-      padding: 40px;
-    }
-    a {
-      display: block;
-      margin: 12px auto;
-      padding: 14px;
-      max-width: 400px;
-      background: #38bdf8;
-      color: #020617;
-      text-decoration: none;
-      border-radius: 10px;
-      font-weight: bold;
-    }
-    a:hover {
-      background: #0ea5e9;
-    }
-  </style>
+<style>
+body {
+  font-family: system-ui, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Botões de filtro */
+.filter-buttons {
+  margin-bottom: 20px;
+}
+
+.filter-buttons button {
+  background: #38bdf8;
+  border: none;
+  color: #020617;
+  padding: 10px 14px;
+  margin: 4px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.filter-buttons button:hover {
+  background: #0ea5e9;
+}
+
+/* Cards */
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.card {
+  background: #1e293b;
+  padding: 16px;
+  margin: 10px 0;
+  border-radius: 12px;
+  display: none; /* começa escondido */
+}
+
+.card a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Mostrar */
+.show {
+  display: block;
+}
+</style>
 </head>
 
 <body>
-  <h1>🧠 Neurodiversidade</h1>
 
-  <a href="https://exemplo.com">Estudos científicos</a>
-  <a href="https://exemplo.com">Materiais de apoio</a>
-  <a href="https://exemplo.com">Projetos</a>
+<h1>🧠 Neurodiversidade</h1>
+
+<div class="filter-buttons">
+  <button onclick="filterSelection('all')">Todas</button>
+  <button onclick="filterSelection('tdah')">TDAH</button>
+  <button onclick="filterSelection('autismo')">Autismo</button>
+  <button onclick="filterSelection('comorbidades')">Comorbidades</button>
+</div>
+
+<div class="container">
+
+  <div class="card tdah show">
+    <a href="https://exemplo.com" target="_blank">Estudo sobre TDAH</a>
+    <p>Base científica sobre TDAH em adultos</p>
+  </div>
+
+  <div class="card autismo show">
+    <a href="https://exemplo.com" target="_blank">Autismo e genética</a>
+    <p>Genes e neurodesenvolvimento</p>
+  </div>
+
+  <div class="card comorbidades show">
+    <a href="https://exemplo.com" target="_blank">Comorbidades psiquiátricas</a>
+    <p>TDAH, compulsão alimentar e ansiedade</p>
+  </div>
+
+</div>
+
+<script>
+function filterSelection(category) {
+  const cards = document.getElementsByClassName("card");
+
+  for (let i = 0; i < cards.length; i++) {
+    cards[i].classList.remove("show");
+
+    if (category === "all") {
+      cards[i].classList.add("show");
+    } else if (cards[i].classList.contains(category)) {
+      cards[i].classList.add("show");
+    }
+  }
+}
+</script>
+
 </body>
 </html>
+
