@@ -40,6 +40,10 @@
       margin-bottom: 25px;
     }
 
+    .filter-buttons {
+      margin-bottom: 25px;
+    }
+
     .filter-buttons button {
       background: #38bdf8;
       border: none;
@@ -74,6 +78,8 @@
     }
 
     .card a {
+      display: inline-block;
+      margin-top: 8px;
       color: #38bdf8;
       font-weight: 600;
       text-decoration: none;
@@ -98,66 +104,62 @@
 
   <div class="filter-buttons">
     <button onclick="filterSelection('all')">Todas</button>
-    <button onclick="filterSelection('adhd')">TDAH</button>
     <button onclick="filterSelection('autism')">Autismo</button>
+    <button onclick="filterSelection('adhd')">TDAH</button>
     <button onclick="filterSelection('comorbidities')">Comorbilidades</button>
   </div>
 
   <div class="container">
 
+    <!-- AUTISMO -->
     <div class="card autism show">
       <h3>Autismo como Condición del Neurodesarrollo</h3>
       <p>Una visión moderna del autismo dentro del paradigma de la neurodiversidad.</p>
-      <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5559537/" target="_blank">Leer artículo</a>
-      Leer artículo
+      <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5559537/" target="_blank">
+        Leer artículo
+      </a>
     </div>
-    
-   <div class="card autism show">
-    <h3>Sensory Processing in Autism</h3>
-    <p>Análisis del procesamiento sensorial atípico en adultos autistas.</p>
-    <a href="https://www.frontiersin.org/articles/10.3389/fnint.2020.00041/full" target="_blank">
-      Leer artículo
-    </a>
-  </div>
 
-   <div class="card autism show">
-   <div class="card comorbidades show">  
-    <h3>Risk of migrane in Autism</h3>
-    <p>Riesgo de desarrollar migrañas en niños y adolescentes autistas.</p>
-    <a href="https://www.sciencedirect.com/science/article/pii/S1750946721001550" target="_blank">
-      Leer artículo
-    </a>
-  </div>
+    <div class="card autism show">
+      <h3>Sensory Processing in Autism</h3>
+      <p>Análisis del procesamiento sensorial atípico en adultos autistas.</p>
+      <a href="https://www.frontiersin.org/articles/10.3389/fnint.2020.00041/full" target="_blank">
+        Leer artículo
+      </a>
+    </div>
 
-  <div class="card autism show">
-  <div class="card comorbidades show">  
-    <h3>Association of migrane and autistic traits (2)</h3>
-    <p>Asociación entre migraña y rasgos autistas, efectos sobre la discapacidad inducida por dolor de cabeza.</p>
-    <a href="https://www.ovid.com/journals/head/abstract/10.1111/head.14945~the-association-of-migraine-and-autistic-traits-effects-on" target="_blank">
-      Leer artículo
-    </a>
-  </div>
+    <div class="card autism show">
+      <h3>Risk of Migraine in Autism</h3>
+      <p>Riesgo de desarrollar migrañas en niños y adolescentes autistas.</p>
+      <a href="https://www.sciencedirect.com/science/article/pii/S1750946721001550" target="_blank">
+        Leer artículo
+      </a>
+    </div>
 
+    <div class="card autism show">
+      <h3>Association of Migraine and Autistic Traits</h3>
+      <p>Asociación entre migraña y rasgos autistas y su impacto en la discapacidad inducida por cefalea.</p>
+      <a href="https://www.ovid.com/journals/head/abstract/10.1111/head.14945" target="_blank">
+        Leer artículo
+      </a>
+    </div>
 
-  <!-- COMORBIDADES -->
-  <div class="card comorbidities show">
-  <div class="card adhd show">
-    <h3>ADHD and Binge Eating Disorder</h3>
-    <p>Estudio sobre la relación entre el TDAH y el trastorno por atracón.</p>
-    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6521052/" target="_blank">
-      Leer artículo
-    </a>
-  </div>
+    <!-- COMORBILIDADES -->
+    <div class="card adhd comorbidities show">
+      <h3>ADHD and Binge Eating Disorder</h3>
+      <p>Estudio sobre la relación entre el TDAH y el trastorno por atracón.</p>
+      <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6521052/" target="_blank">
+        Leer artículo
+      </a>
+    </div>
 
-  
-  <div class="card comorbidities show">
-    <h3>Neurodiversity and Mental Health</h3>
-    <p>Una discusión crítica sobre la salud mental dentro del modelo de neurodiversidad.</p>
-    <a href="https://www.tandfonline.com/doi/full/10.1080/17522439.2017.1296086" target="_blank">
-      Leer artículo
-    </a>
-  </div>
-
+    <div class="card comorbidities show">
+      <h3>Neurodiversity and Mental Health</h3>
+      <p>Una discusión crítica sobre la salud mental dentro del modelo de neurodiversidad.</p>
+      <a href="https://www.tandfonline.com/doi/full/10.1080/17522439.2017.1296086" target="_blank">
+        Leer artículo
+      </a>
+    </div>
 
   </div>
 
