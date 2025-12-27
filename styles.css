@@ -37,6 +37,28 @@ h1 {
   font-size: 1.6rem;
 }
 
+/* Navegação interna */
+.page-nav {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.nav-button {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.nav-button:hover {
+  background: #1e293b;
+}
+
+
 /* ===== Footer ===== */
 footer {
   margin-top: 40px;
