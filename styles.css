@@ -56,3 +56,19 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+/* Seções internas (About / Scientific) */
+section {
+  margin-bottom: 28px;
+}
+
+section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #e5e7eb;
+}
+
+section p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
