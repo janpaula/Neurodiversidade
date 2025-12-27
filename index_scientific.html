@@ -15,14 +15,14 @@
     }
 
     h1 {
+      margin-bottom: 12px;
       font-size: 1.8rem;
-      margin-bottom: 10px;
     }
 
     .subtitle {
-      font-size: 1rem;
+      font-size: 0.95rem;
       color: #94a3b8;
-      margin-bottom: 25px;
+      margin-bottom: 24px;
     }
 
     .theme-links {
@@ -30,21 +30,56 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 12px;
-      margin-bottom: 30px;
+      margin-bottom: 32px;
     }
 
     .theme-links a {
       background: #38bdf8;
       color: #020617;
-      font-weight: 600;
-      padding: 10px 14px;
+      padding: 10px 16px;
       border-radius: 8px;
+      font-weight: 600;
       text-decoration: none;
-      transition: background 0.2s;
+      transition: background 0.2s ease;
     }
 
     .theme-links a:hover {
       background: #0ea5e9;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: auto;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 18px;
+      margin: 14px 0;
+      border-radius: 14px;
+      text-align: left;
+    }
+
+    .card h3 {
+      font-size: 1.05rem;
+      margin-top: 0;
+    }
+
+    .card p {
+      color: #cbd5f5;
+      font-size: 0.95rem;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #38bdf8;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
     }
 
     footer {
@@ -80,9 +115,70 @@
     <a href="comorbidities.html">Comorbidities</a>
   </div>
 
+  <div class="container">
+
+    <!-- AUTISM -->
+    <div class="card">
+      <h3>Autism as a Neurodevelopmental Condition</h3>
+      <p>A modern view of autism within the neurodiversity paradigm.</p>
+      <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5559537/" target="_blank">Read article</a>
+    </div>
+
+    <div class="card">
+      <h3>Sensory Processing in Autism</h3>
+      <p>Analysis of atypical sensory processing in autistic adults.</p>
+      <a href="https://www.frontiersin.org/articles/10.3389/fnint.2020.00041/full" target="_blank">Read article</a>
+    </div>
+
+    <div class="card">
+      <h3>Risk of Migraine in Autism</h3>
+      <p>Risk of developing migraines in autistic children and adolescents.</p>
+      <a href="https://www.sciencedirect.com/science/article/pii/S1750946721001550" target="_blank">Read article</a>
+    </div>
+
+    <div class="card">
+      <h3>Association of Migraine and Autistic Traits</h3>
+      <p>Association between migraine and autistic traits, effects on headache-induced disability.</p>
+      <a href="https://www.ovid.com/journals/head/abstract/10.1111/head.14945" target="_blank">Read article</a>
+    </div>
+
+    <!-- ADHD -->
+    <div class="card">
+      <h3>ADHD and Binge Eating Disorder</h3>
+      <p>Study on the relationship between ADHD and binge eating disorder.</p>
+      <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6521052/" target="_blank">Read article</a>
+    </div>
+
+    <!-- COMORBIDITIES -->
+    <div class="card">
+      <h3>Neurodiversity and Mental Health</h3>
+      <p>A critical discussion on mental health within the neurodiversity model.</p>
+      <a href="https://www.tandfonline.com/doi/full/10.1080/17522439.2017.1296086" target="_blank">Read article</a>
+    </div>
+
+    <div class="card">
+      <h3>Prevalence of Co-occurring Mental Health Diagnoses in Autistic Populations</h3>
+      <p>Prevalence of co-occurring mental health diagnoses in the autistic population.</p>
+      <a href="https://www.sciencedirect.com/science/article/abs/pii/S2215036619302895" target="_blank">Read article</a>
+    </div>
+
+    <div class="card">
+      <h3>Migraine and Association with Polygenic Scores for Autism</h3>
+      <p>Migraine associated with Autism Spectrum Disorder.</p>
+      <a href="https://pubmed.ncbi.nlm.nih.gov/39814546/" target="_blank">Read article</a>
+    </div>
+
+    <div class="card">
+      <h3>Autism and Migraine as an Unexplored Association</h3>
+      <p>Review discussing migraine as a comorbidity in autism.</p>
+      <a href="https://pubmed.ncbi.nlm.nih.gov/39814546/" target="_blank">Read article</a>
+    </div>
+
+  </div>
+
   <footer>
-    Neurodiversity — main archive.
-    <a href="index.html">← Back to general archive</a>
+    Neurodiversity — scientific archive.
+    <a href="index.html">← Back to main archive</a>
   </footer>
 
 </body>
