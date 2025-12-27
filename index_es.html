@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Neurodiversidad — Publicaciones Científicas</title>
+  <title>Neurodiversidad — Artículos Científicos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
@@ -14,6 +14,22 @@
       text-align: center;
     }
 
+    .lang-buttons {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .lang-buttons a {
+      font-size: 0.85rem;
+      color: #e5e7eb;
+      text-decoration: none;
+      padding: 4px 8px;
+      border-radius: 6px;
+      border: 1px solid #334155;
+    }
+
     h1 {
       margin-bottom: 10px;
     }
@@ -21,11 +37,6 @@
     p.subtitle {
       color: #94a3b8;
       font-size: 0.95rem;
-      margin-bottom: 25px;
-    }
-
-    /* Botones de filtro */
-    .filter-buttons {
       margin-bottom: 25px;
     }
 
@@ -40,17 +51,11 @@
       cursor: pointer;
     }
 
-    .filter-buttons button:hover {
-      background: #0ea5e9;
-    }
-
-    /* Contenedor */
     .container {
       max-width: 720px;
       margin: auto;
     }
 
-    /* Tarjetas */
     .card {
       background: #1e293b;
       padding: 18px;
@@ -62,27 +67,18 @@
 
     .card h3 {
       margin-top: 0;
-      font-size: 1.05rem;
     }
 
     .card p {
       color: #cbd5f5;
-      font-size: 0.95rem;
     }
 
     .card a {
-      display: inline-block;
-      margin-top: 10px;
       color: #38bdf8;
       font-weight: 600;
       text-decoration: none;
     }
 
-    .card a:hover {
-      text-decoration: underline;
-    }
-
-    /* Mostrar tarjetas */
     .show {
       display: block;
     }
@@ -91,95 +87,28 @@
 
 <body>
 
-  <h1>🧠 Publicaciones Científicas sobre Neurodiversidad 🧠</h1>
+  <div class="lang-buttons">
+    <a href="index_pt.html">Português</a>
+    <a href="index_en.html">English</a>
+    <a href="index_es.html">Español</a>
+  </div>
 
-  <p class="subtitle">
-    Artículos científicos organizados por tema
-  </p>
+  <h1>🧠 Publicaciones Científicas sobre Neurodiversidad</h1>
+  <p class="subtitle">Artículos científicos curados y organizados por tema</p>
 
   <div class="filter-buttons">
     <button onclick="filterSelection('all')">Todas</button>
-    <button onclick="filterSelection('tdah')">TDAH</button>
-    <button onclick="filterSelection('autismo')">Autismo</button>
-    <button onclick="filterSelection('comorbidades')">Comorbilidades</button>
+    <button onclick="filterSelection('adhd')">TDAH</button>
+    <button onclick="filterSelection('autism')">Autismo</button>
+    <button onclick="filterSelection('comorbidities')">Comorbilidades</button>
   </div>
 
   <div class="container">
 
-    <!-- AUTISMO -->
-    <div class="card autismo show">
-      <h3>Autism as a Neurodevelopmental Condition</h3>
+    <div class="card autism show">
+      <h3>Autismo como Condición del Neurodesarrollo</h3>
       <p>Una visión moderna del autismo dentro del paradigma de la neurodiversidad.</p>
-      <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5559537/" target="_blank">
-        Leer artículo
-      </a>
-    </div>
-
-    <div class="card autismo show">
-      <h3>Sensory Processing in Autism</h3>
-      <p>Análisis del procesamiento sensorial atípico en adultos autistas.</p>
-      <a href="https://www.frontiersin.org/articles/10.3389/fnint.2020.00041/full" target="_blank">
-        Leer artículo
-      </a>
-    </div>
-
-    <!-- AUTISMO + COMORBILIDADES -->
-    <div class="card autismo comorbidades show">
-      <h3>Risk of Migraine in Autism</h3>
-      <p>Riesgo de desarrollar migrañas en niños y adolescentes autistas.</p>
-      <a href="https://www.sciencedirect.com/science/article/pii/S1750946721001550" target="_blank">
-        Leer artículo
-      </a>
-    </div>
-
-    <div class="card autismo comorbidades show">
-      <h3>Association of Migraine and Autistic Traits</h3>
-      <p>Asociación entre migraña y rasgos autistas, y su impacto en la discapacidad inducida por cefalea.</p>
-      <a href="https://www.ovid.com/journals/head/abstract/10.1111/head.14945" target="_blank">
-        Leer artículo
-      </a>
-    </div>
-
-    <!-- TDAH + COMORBILIDADES -->
-    <div class="card tdah comorbidades show">
-      <h3>ADHD and Binge Eating Disorder</h3>
-      <p>Estudio sobre la relación entre el TDAH y el trastorno por atracón.</p>
-      <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6521052/" target="_blank">
-        Leer artículo
-      </a>
-    </div>
-
-    <!-- COMORBILIDADES -->
-    <div class="card comorbidades show">
-      <h3>Neurodiversity and Mental Health</h3>
-      <p>Discusión crítica sobre la salud mental dentro del modelo de neurodiversidad.</p>
-      <a href="https://www.tandfonline.com/doi/full/10.1080/17522439.2017.1296086" target="_blank">
-        Leer artículo
-      </a>
-    </div>
-
-    <div class="card autismo comorbidades show">
-      <h3>Prevalence of Co-occurring Mental Health Diagnoses in Autistic Population</h3>
-      <p>Prevalencia de diagnósticos de salud mental coexistentes en la población autista.</p>
-      <a href="https://www.sciencedirect.com/science/article/abs/pii/S2215036619302895" target="_blank">
-        Leer artículo
-      </a>
-    </div>
-
-    <div class="card autismo comorbidades show">
-      <h3>Migraine and Association with Polygenic Scores for Autism</h3>
-      <p>Asociación entre migraña y riesgo genético para trastorno del espectro autista.</p>
-      <a href="https://pubmed.ncbi.nlm.nih.gov/39814546/" target="_blank">
-        Leer artículo
-      </a>
-    </div>
-
-    <div class="card autismo comorbidades show">
-      <h3>Autism and Migraine as an Unexplored Association</h3>
-      <p>Revisión sobre la migraña como comorbilidad en el autismo.</p>
-      <a href="https://pubmed.ncbi.nlm.nih.gov/39814546/" target="_blank">
-        Leer artículo
-      </a>
+      <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5559537/" target="_blank">Leer artículo</a>
     </div>
 
   </div>
@@ -188,18 +117,14 @@
     function filterSelection(category) {
       const cards = document.getElementsByClassName("card");
 
-      for (let i = 0; i < cards.length; i++) {
-        cards[i].classList.remove("show");
-
-        if (category === "all") {
-          cards[i].classList.add("show");
-        } else if (cards[i].classList.contains(category)) {
-          cards[i].classList.add("show");
+      for (let card of cards) {
+        card.classList.remove("show");
+        if (category === "all" || card.classList.contains(category)) {
+          card.classList.add("show");
         }
       }
     }
 
-    // Mostrar todas las tarjetas al cargar la página
     filterSelection("all");
   </script>
 
