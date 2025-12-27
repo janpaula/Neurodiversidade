@@ -1,25 +1,180 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Redirecting…</title>
+  <title>Neurodiversidade — Acervo Curado</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>
-    const lang = navigator.language || navigator.userLanguage;
-    if (lang.startsWith("pt")) {
-      window.location.href = "index_pt.html";
-    } else if (lang.startsWith("es")) {
-      window.location.href = "index_es.html";
-    } else {
-      window.location.href = "index_en.html";
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: linear-gradient(135deg, #020617, #1e293b);
+      color: #e5e7eb;
+      padding: 20px;
+      text-align: center;
     }
-  </script>
+
+    /* Idioma */
+    .lang-buttons {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .lang-buttons a {
+      font-size: 0.85rem;
+      color: #e5e7eb;
+      text-decoration: none;
+      padding: 4px 8px;
+      border-radius: 6px;
+      border: 1px solid #334155;
+    }
+
+    .lang-buttons a:hover {
+      background: #1e293b;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: #94a3b8;
+      margin-bottom: 25px;
+    }
+
+    /* Botões de filtro */
+    .filter-buttons {
+      margin-bottom: 25px;
+    }
+
+    .filter-buttons button {
+      background: #38bdf8;
+      border: none;
+      color: #020617;
+      padding: 10px 14px;
+      margin: 4px;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .filter-buttons button:hover {
+      background: #0ea5e9;
+    }
+
+    /* Container e Cards */
+    .container {
+      max-width: 720px;
+      margin: auto;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 18px;
+      margin: 14px 0;
+      border-radius: 14px;
+      text-align: left;
+      display: none;
+    }
+
+    .card h3 {
+      font-size: 1.05rem;
+      margin-bottom: 6px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #cbd5f5;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #38bdf8;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.15s ease;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    .card a:active {
+      transform: scale(0.97);
+    }
+
+    .show {
+      display: block;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 40px;
+      padding-top: 15px;
+      border-top: 1px solid #334155;
+      font-size: 0.85rem;
+      color: #94a3b8;
+      text-align: center;
+    }
+
+    footer a {
+      color: #38bdf8;
+      text-decoration: none;
+      margin-left: 6px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
+
 <body>
-  <p style="font-family: system-ui; text-align: center; padding: 40px;">
-    Redirecting…
-  </p>
+
+  <!-- Botões de idioma -->
+  <div class="lang-buttons">
+    <a href="index_pt.html">Português</a>
+    <a href="index_en.html">English</a>
+    <a href="index_es.html">Español</a>
+  </div>
+
+  <h1>🧠 Neurodiversidade — Acervo Curado 🧠</h1>
+  <p class="subtitle">Artigos e conteúdos organizados por tema</p>
+
+  <div class="filter-buttons">
+    <button onclick="filterSelection('all')">Todos</button>
+    <button onclick="filterSelection('tdah')">TDAH</button>
+    <button onclick="filterSelection('autismo')">Autismo</button>
+    <button onclick="filterSelection('comorbidades')">Comorbidades</button>
+  </div>
+
+  <div class="container">
+    <!-- Aqui vão os cards como no index_pt.html -->
+  </div>
+
+  <script>
+    function filterSelection(category) {
+      const cards = document.getElementsByClassName("card");
+      for (let i = 0; i < cards.length; i++) {
+        cards[i].classList.remove("show");
+        if (category === "all" || cards[i].classList.contains(category)) {
+          cards[i].classList.add("show");
+        }
+      }
+    }
+
+    filterSelection("all");
+  </script>
+
+  <footer>
+    Neurodiversidade — curated archive.
+    <a href="index_scientific.html">🔬 Scientific version</a>
+  </footer>
+
 </body>
 </html>
-
-
