@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting…</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script>
+    const lang = navigator.language || navigator.userLanguage;
+
+    if (lang.startsWith("pt")) {
+      window.location.href = "index_pt.html";
+    } else if (lang.startsWith("es")) {
+      window.location.href = "index_es.html";
+    } else {
+      window.location.href = "index_en.html";
+    }
+  </script>
+</head>
+
+<body>
+  <p style="font-family: system-ui; text-align: center; padding: 40px;">
+    Redirecting…
+  </p>
+</body>
+</html>
