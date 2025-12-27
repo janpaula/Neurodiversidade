@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Neurodiversity — Scientific Articles</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    p.subtitle {
+      color: #94a3b8;
+      font-size: 0.95rem;
+      margin-bottom: 25px;
+    }
+
+    /* Filter buttons */
+    .filter-buttons {
+      margin-bottom: 25px;
+    }
+
+    .filter-buttons button {
+      background: #38bdf8;
+      border: none;
+      color: #020617;
+      padding: 10px 14px;
+      margin: 4px;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .filter-buttons button:hover {
+      background: #0ea5e9;
+    }
+
+    /* Container */
+    .container {
+      max-width: 720px;
+      margin: auto;
+    }
+
+    /* Cards */
+    .card {
+      background: #1e293b;
+      padding: 18px;
+      margin: 14px 0;
+      border-radius: 14px;
+      text-align: left;
+      display: none;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 1.05rem;
+    }
+
+    .card p {
+      color: #cbd5f5;
+      font-size: 0.95rem;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #38bdf8;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    /* Show cards */
+    .show {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>🧠 Scientific Publications on Neurodiversity 🧠</h1>
+
+  <p class="subtitle">
+    Scientific articles curated and organized by topic
+  </p>
+
+  <div class="filter-buttons">
+    <button onclick="filterSelection('all')">All</button>
+    <button onclick="filterSelection('tdah')">ADHD</button>
+    <button onclick="filterSelection('autismo')">ASD</button>
+    <button onclick="filterSelection('comorbidades')">Comorbidities</button>
+  </div>
+
+  <div class="container">
+
+    <!-- AUTISM -->
+    <div class="card autismo show">
+      <h3>Autism as a Neurodevelopmental Condition</h3>
+      <p>A modern view of autism within the neurodiversity paradigm.</p>
+      <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5559537/" target="_blank">
+        Read article
+      </a>
+    </div>
+
+    <div class="card autismo show">
+      <h3>Sensory Processing in Autism</h3>
+      <p>Analysis of atypical sensory processing in autistic adults.</p>
+      <a href="https://www.frontiersin.org/articles/10.3389/fnint.2020.00041/full" target="_blank">
+        Read article
+      </a>
+    </div>
+
+    <!-- AUTISM + COMORBIDITIES -->
+    <div class="card autismo comorbidades show">
+      <h3>Risk of Migraine in Autism</h3>
+      <p>Risk of developing migraine in autistic children and adolescents.</p>
+      <a href="https://www.sciencedirect.com/science/article/pii/S1750946721001550" target="_blank">
+        Read article
+      </a>
+    </div>
+
+    <div class="card autismo comorbidades show">
+      <h3>Association of Migraine and Autistic Traits</h3>
+      <p>Association between migraine and autistic traits, and its impact on headache-related disability.</p>
+      <a href="https://www.ovid.com/journals/head/abstract/10.1111/head.14945" target="_blank">
+        Read article
+      </a>
+    </div>
+
+    <!-- ADHD + COMORBIDITIES -->
+    <div class="card tdah comorbidades show">
+      <h3>ADHD and Binge Eating Disorder</h3>
+      <p>Study on the relationship between ADHD and binge eating disorder.</p>
+      <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6521052/" target="_blank">
+        Read article
+      </a>
+    </div>
+
+    <!-- COMORBIDITIES -->
+    <div class="card comorbidades show">
+      <h3>Neurodiversity and Mental Health</h3>
+      <p>A critical discussion of mental health within the neurodiversity model.</p>
+      <a href="https://www.tandfonline.com/doi/full/10.1080/17522439.2017.1296086" target="_blank">
+        Read article
+      </a>
+    </div>
+
+    <div class="card autismo comorbidades show">
+      <h3>Prevalence of Co-occurring Mental Health Diagnoses in Autistic Populations</h3>
+      <p>Prevalence of co-occurring mental health diagnoses in autistic individuals.</p>
+      <a href="https://www.sciencedirect.com/science/article/abs/pii/S2215036619302895" target="_blank">
+        Read article
+      </a>
+    </div>
+
+    <div class="card autismo comorbidades show">
+      <h3>Migraine and Association with Polygenic Scores for Autism</h3>
+      <p>Association between migraine and genetic liability for autism.</p>
+      <a href="https://pubmed.ncbi.nlm.nih.gov/39814546/" target="_blank">
+        Read article
+      </a>
+    </div>
+
+    <div class="card autismo comorbidades show">
+      <h3>Autism and Migraine as an Unexplored Association</h3>
+      <p>Review discussing migraine as a comorbidity in autism.</p>
+      <a href="https://pubmed.ncbi.nlm.nih.gov/39814546/" target="_blank">
+        Read article
+      </a>
+    </div>
+
+  </div>
+
+  <script>
+    function filterSelection(category) {
+      const cards = document.getElementsByClassName("card");
+
+      for (let i = 0; i < cards.length; i++) {
+        cards[i].classList.remove("show");
+
+        if (category === "all") {
+          cards[i].classList.add("show");
+        } else if (cards[i].classList.contains(category)) {
+          cards[i].classList.add("show");
+        }
+      }
+    }
+
+    // Show all cards on page load
+    filterSelection("all");
+  </script>
+
+</body>
+</html>
