@@ -94,10 +94,15 @@ section p {
   margin-bottom: 10px;
 }
 
-/* Botão voltar */
-.back-button {
+/* Navegação interna */
+.page-nav {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.nav-button {
   display: inline-block;
-  margin-top: 10px;
   padding: 8px 14px;
   border-radius: 8px;
   border: 1px solid #334155;
@@ -106,7 +111,7 @@ section p {
   font-size: 0.9rem;
 }
 
-.back-button:hover {
+.nav-button:hover {
   background: #1e293b;
 }
 
