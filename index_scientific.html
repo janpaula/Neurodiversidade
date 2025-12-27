@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Neurodiversity — Scientific Archive</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <style>
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
@@ -14,34 +15,46 @@
     }
 
     h1 {
-      margin-bottom: 15px;
+      margin-bottom: 10px;
+      font-size: 1.8rem;
     }
 
     p.subtitle {
       color: #94a3b8;
-      font-size: 0.95rem;
+      font-size: 1rem;
       margin-bottom: 25px;
+    }
+
+    .theme-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+      max-width: 400px;
+      margin: auto;
     }
 
     .theme-links a {
       display: block;
-      margin: 10px auto;
-      padding: 12px 18px;
+      width: 100%;
+      max-width: 320px;
       background: #38bdf8;
       color: #020617;
       font-weight: 600;
-      border-radius: 8px;
       text-decoration: none;
-      width: 200px;
-      transition: background 0.2s ease;
+      padding: 14px 0;
+      border-radius: 10px;
+      transition: transform 0.15s ease, background 0.2s ease;
+      text-align: center;
     }
 
     .theme-links a:hover {
       background: #0ea5e9;
+      transform: scale(1.03);
     }
 
     footer {
-      margin-top: 40px;
+      margin-top: 50px;
       padding-top: 15px;
       border-top: 1px solid #334155;
       font-size: 0.85rem;
@@ -60,10 +73,10 @@
     }
   </style>
 </head>
-
 <body>
+
   <h1>🧠 Neurodiversity — Scientific Archive 🧠</h1>
-  <p class="subtitle">Curated scientific articles organized by topic</p>
+  <p class="subtitle">Curated articles organized by topic</p>
 
   <div class="theme-links">
     <a href="autism.html">Autism</a>
@@ -74,7 +87,8 @@
 
   <footer>
     Neurodiversity — curated archive.
-    <a href="index.html">Back to general version</a>
+    <a href="index.html">Back to main page</a>
   </footer>
+
 </body>
 </html>
