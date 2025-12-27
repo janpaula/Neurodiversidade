@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Neurodiversidade — Artigos Científicos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    p.subtitle {
+      color: #94a3b8;
+      font-size: 0.95rem;
+      margin-bottom: 25px;
+    }
+
+    /* Botões de idioma */
+    .lang-buttons {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .lang-buttons a {
+      font-size: 0.85rem;
+      color: #e5e7eb;
+      text-decoration: none;
+      padding: 4px 8px;
+      border-radius: 6px;
+      border: 1px solid #334155;
+    }
+
+    .lang-buttons a:hover {
+      background: #1e293b;
+    }
+
+    /* Botões de filtro */
+    .filter-buttons {
+      margin-bottom: 25px;
+    }
+
+    .filter-buttons button {
+      background: #38bdf8;
+      border: none;
+      color: #020617;
+      padding: 10px 14px;
+      margin: 4px;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .filter-buttons button:hover {
+      background: #0ea5e9;
+    }
+
+    /* Container */
+    .container {
+      max-width: 720px;
+      margin: auto;
+    }
+
+    /* Cards */
+    .card {
+      background: #1e293b;
+      padding: 18px;
+      margin: 14px 0;
+      border-radius: 14px;
+      text-align: left;
+      display: none;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 1.05rem;
+    }
+
+    .card p {
+      color: #cbd5f5;
+      font-size: 0.95rem;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #38bdf8;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    /* Mostrar cards */
+    .show {
+      display: block;
+    }
+
+    /* Responsividade (mobile) */
+    @media (max-width: 600px) {
+      body {
+        padding: 14px;
+      }
+
+      h1 {
+        font-size: 1.4rem;
+      }
+
+      .filter-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .filter-buttons button {
+        flex: 1 1 auto;
+        min-width: 120px;
+      }
+
+      .card {
+        padding: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- BOTÕES DE IDIOMA -->
+  <div class="lang-buttons">
+    <a href="index_pt.html">Português</a>
+    <a href="index_en.html">English</a>
+    <a href="index_es.html">Español</a>
+  </div>
+
+  <h1>🧠 Publicações Científicas sobre Neurodiversidade 🧠</h1>
+
+  <p class="subtitle">
+    Curadoria de artigos científicos organizados por tema
+  </p>
+
+  <div class="filter-buttons">
+    <button onclick="filterSelection('all')">Todas</button>
+    <button onclick="filterSelection('tdah')">TDAH</button>
+    <button onclick="filterSelection('autismo')">Autismo</button>
+    <button onclick="filterSelection('comorbidades')">Comorbidades</button>
+  </div>
+
+  <div class="container">
+
+    <!-- AUTISMO -->
+    <div class="card autismo show">
+      <h3>Autism as a Neurodevelopmental Condition</h3>
+      <p>Uma visão moderna do autismo dentro do paradigma da neurodiversidade.</p>
+      <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5559537/" target="_blank">
+        Ler artigo
+      </a>
+    </div>
+
+    <div class="card autismo show">
+      <h3>Sensory Processing in Autism</h3>
+      <p>Análise do processamento sensorial atípico em adultos autistas.</p>
+      <a href="https://www.frontiersin.org/articles/10.3389/fnint.2020.00041/full" target="_blank">
+        Ler artigo
+      </a>
+    </div>
+
+    <!-- AUTISMO + COMORBIDADES -->
+    <div class="card autismo comorbidades show">
+      <h3>Risk of Migraine in Autism</h3>
+      <p>Risco de desenvolvimento de enxaqueca em crianças e adolescentes autistas.</p>
+      <a href="https://www.sciencedirect.com/science/article/pii/S1750946721001550" target="_blank">
+        Ler artigo
+      </a>
+    </div>
+
+    <div class="card autismo comorbidades show">
+      <h3>Association of Migraine and Autistic Traits</h3>
+      <p>Associação entre enxaqueca e traços autistas e seu impacto funcional.</p>
+      <a href="https://www.ovid.com/journals/head/abstract/10.1111/head.14945" target="_blank">
+        Ler artigo
+      </a>
+    </div>
+
+    <!-- TDAH + COMORBIDADES -->
+    <div class="card tdah comorbidades show">
+      <h3>ADHD and Binge Eating Disorder</h3>
+      <p>Estudo sobre a relação entre TDAH e transtorno de compulsão alimentar.</p>
+      <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6521052/" target="_blank">
+        Ler artigo
+      </a>
+    </div>
+
+    <!-- COMORBIDADES -->
+    <div class="card comorbidades show">
+      <h3>Neurodiversity and Mental Health</h3>
+      <p>Discussão crítica sobre saúde mental dentro do modelo de neurodiversidade.</p>
+      <a href="https://www.tandfonline.com/doi/full/10.1080/17522439.2017.1296086" target="_blank">
+        Ler artigo
+      </a>
+    </div>
+
+    <div class="card autismo comorbidades show">
+      <h3>Prevalence of Co-occurring Mental Health Diagnoses in Autistic Populations</h3>
+      <p>Prevalência de diagnósticos de saúde mental coexistentes em populações autistas.</p>
+      <a href="https://www.sciencedirect.com/science/article/abs/pii/S2215036619302895" target="_blank">
+        Ler artigo
+      </a>
+    </div>
+
+    <div class="card autismo comorbidades show">
+      <h3>Migraine and Association with Polygenic Scores for Autism</h3>
+      <p>Associação entre enxaqueca e risco genético para o autismo.</p>
+      <a href="https://pubmed.ncbi.nlm.nih.gov/39814546/" target="_blank">
+        Ler artigo
+      </a>
+    </div>
+
+    <div class="card autismo comorbidades show">
+      <h3>Autism and Migraine as an Unexplored Association</h3>
+      <p>Revisão que discute a enxaqueca como comorbidade no autismo.</p>
+      <a href="https://pubmed.ncbi.nlm.nih.gov/39814546/" target="_blank">
+        Ler artigo
+      </a>
+    </div>
+
+  </div>
+
+  <script>
+    function filterSelection(category) {
+      const cards = document.getElementsByClassName("card");
+
+      for (let i = 0; i < cards.length; i++) {
+        cards[i].classList.remove("show");
+
+        if (category === "all") {
+          cards[i].classList.add("show");
+        } else if (cards[i].classList.contains(category)) {
+          cards[i].classList.add("show");
+        }
+      }
+    }
+
+    // Mostrar todos ao carregar
+    filterSelection("all");
+  </script>
+
+</body>
+</html>
