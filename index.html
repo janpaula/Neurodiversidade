@@ -6,90 +6,105 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background: #0f172a;
+/* Botões de idioma */
+.lang-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.lang-buttons button {
+  background: transparent;
+  border: 1px solid #334155;
   color: #e5e7eb;
-  padding: 20px;
-  text-align: center;
-}
-
-h1 {
-  margin-bottom: 10px;
-}
-
-p.subtitle {
-  color: #94a3b8;
-  font-size: 0.95rem;
-  margin-bottom: 25px;
-}
-
-/* Botões de filtro */
-.filter-buttons {
-  margin-bottom: 25px;
-}
-
-.filter-buttons button {
-  background: #38bdf8;
-  border: none;
-  color: #020617;
-  padding: 10px 14px;
-  margin: 4px;
-  border-radius: 8px;
-  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
   cursor: pointer;
+  font-size: 0.85rem;
 }
 
-.filter-buttons button:hover {
-  background: #0ea5e9;
-}
-
-/* Container */
-.container {
-  max-width: 720px;
-  margin: auto;
-}
-
-/* Cards */
-.card {
+.lang-buttons button:hover {
   background: #1e293b;
-  padding: 18px;
-  margin: 14px 0;
-  border-radius: 14px;
-  text-align: left;
-  display: none;
 }
-
-.card h3 {
-  margin-top: 0;
-  font-size: 1.05rem;
-}
-
-.card p {
-  color: #cbd5f5;
-  font-size: 0.95rem;
-}
-
-.card a {
-  display: inline-block;
-  margin-top: 10px;
-  color: #38bdf8;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.card a:hover {
-  text-decoration: underline;
-}
-
-/* Mostrar cards */
-.show {
-  display: block;
-}
-</style>
-</head>
 
 <body>
+
+  <!-- BOTÕES DE IDIOMA -->
+  <div class="lang-buttons">
+    <button onclick="setLanguage('pt')">Português</button>
+    <button onclick="setLanguage('en')">English</button>
+    <button onclick="setLanguage('es')">Español</button>
+  </div>
+
+  <h1>Neurodiversidade</h1>
+
+  <p class="subtitle">
+    Curadoria de artigos científicos sobre TDAH, Autismo e Comorbidades
+  </p>
+
+  <!-- BOTÕES DE FILTRO -->
+  <div class="filter-buttons">
+    <button onclick="filterSelection('all')">Todas</button>
+    <button onclick="filterSelection('tdah')">TDAH</button>
+    <button onclick="filterSelection('autismo')">Autismo</button>
+    <button onclick="filterSelection('comorbidades')">Comorbidades</button>
+  </div>
+
+  <!-- CONTEÚDO -->
+  <div class="container">
+
+    <div class="card autismo show">
+      <h3>Autism as a Neurodevelopmental Condition</h3>
+      <p>Visão moderna do autismo dentro do paradigma da neurodiversidade.</p>
+      <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5559537/" target="_blank">Ler artigo</a>
+    </div>
+
+    <div class="card autismo show">
+      <h3>Sensory Processing in Autism</h3>
+      <p>Análise sobre processamento sensorial atípico em adultos autistas.</p>
+      <a href="https://www.frontiersin.org/articles/10.3389/fnint.2020.00041/full" target="_blank">Ler artigo</a>
+    </div>
+
+    <div class="card comorbidades show">
+      <h3>ADHD and Binge Eating Disorder</h3>
+      <p>Estudo sobre a relação entre TDAH e transtorno de compulsão alimentar.</p>
+      <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6521052/" target="_blank">Ler artigo</a>
+    </div>
+
+    <div class="card comorbidades show">
+      <h3>Neurodiversity and Mental Health</h3>
+      <p>Discussão crítica sobre saúde mental dentro do modelo de neurodiversidade.</p>
+      <a href="https://www.tandfonline.com/doi/full/10.1080/17522439.2017.1296086" target="_blank">Ler artigo</a>
+    </div>
+
+  </div>
+
+  <!-- JAVASCRIPT (NO LUGAR CERTO) -->
+  <script>
+    function filterSelection(category) {
+      const cards = document.getElementsByClassName("card");
+
+      for (let i = 0; i < cards.length; i++) {
+        cards[i].classList.remove("show");
+
+        if (category === "all") {
+          cards[i].classList.add("show");
+        } else if (cards[i].classList.contains(category)) {
+          cards[i].classList.add("show");
+        }
+      }
+    }
+
+    // Mostrar todos ao carregar
+    filterSelection("all");
+
+    function setLanguage(lang) {
+      alert("Idioma selecionado: " + lang);
+    }
+  </script>
+</style>
+</body>
 
 <h1>🧠 Publicações Científicas sobre Neurodiversidade 🧠</h1>
 Artigos científicos organizados por tema
