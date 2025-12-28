@@ -151,6 +151,54 @@ h1 {
   box-shadow: 0 10px 28px rgba(56, 189, 248, 0.35);
 }
 
+/* Container do dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Botão principal */
+.dropbtn {
+  background-color: #4CAF50; /* cor do botão, ajuste se quiser */
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Conteúdo do dropdown (inicialmente escondido) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white; /* cor do fundo do menu */
+  min-width: 180px; /* largura mínima do menu */
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Links dentro do dropdown */
+.dropdown-content a {
+  color: #333;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.2s;
+}
+
+/* Efeito hover nos links */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Mostrar o dropdown ao passar o mouse ou clicar (se preferir JS) */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 
 /* ===== Footer ===== */
 footer {
