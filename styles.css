@@ -37,6 +37,18 @@ h1 {
   font-size: 1.6rem;
 }
 
+/* ===== Research Button (like language buttons) ===== */
+.research-button {
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+.research-button:hover {
+  background: rgba(56, 189, 248, 0.15);
+}
+
+
 /* Navegação interna */
 .page-nav {
   display: flex;
