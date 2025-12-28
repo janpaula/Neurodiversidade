@@ -3,72 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - My Research</title>
+  <title>My Research</title>
   <link rel="stylesheet" href="styles.css"> <!-- seu CSS principal -->
-  <style>
-    /* Dropdown CSS */
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-
-    .dropbtn {
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px 20px;
-      font-size: 16px;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: white;
-      min-width: 180px;
-      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-      z-index: 1;
-      border-radius: 5px;
-      overflow: hidden;
-    }
-
-    .dropdown-content a {
-      color: #333;
-      padding: 10px 15px;
-      text-decoration: none;
-      display: block;
-      transition: background-color 0.2s;
-    }
-
-    .dropdown-content a:hover {
-      background-color: #f1f1f1;
-    }
-
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-  </style>
 </head>
 <body>
 
   <header>
-    <h1>Welcome to My Research</h1>
+    <h1>My Current Research</h1>
     <p>Would you like to see what I'm working on?</p>
   </header>
 
   <main>
-  <div class="current-work">
-    <div class="dropdown">
-      <button class="dropbtn">Studies</button>
-      <div class="dropdown-content">
-        <a href="neurodiversity-research/research/riskmigraineinEnglish.html"></a>
-        <a href="neurodiversity-research/research/notes_table_results_article2.html"></a>
-      </div>
-    </div>
-  </div>
-</main>
+    <div class="current-work">
 
+      <div class="card study1 show">
+        <h3>Autism and Migraine Risk</h3>
+        <p>Risk Analysis of Migraine in Autistic Children and Adolescents.</p>
+        <a href="neurodiversity-research/research/riskmigraineinEnglish.html" target="_blank">Read Analisys</a>
+      </div>
+
+      <div class="card study2 show">
+        <h3>ASD PGS and Migraine Analysis</h3>
+        <p>Analisys investigation of a genetic predisposition for ASD is linked to migraine and its major subtypes.</p>
+        <a href="neurodiversity-research/research/notes_table_results_article2.html" target="_blank">Read Article</a>
+      </div>
+
+    </div>
+  </main>
 
   <footer>
     <p>&copy; 2025 My Research</p>
