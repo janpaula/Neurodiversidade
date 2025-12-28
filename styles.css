@@ -128,6 +128,29 @@ h1 {
   box-shadow: 0 10px 28px rgba(56, 189, 248, 0.35);
 }
 
+.research-desc {
+  font-size: 0.95rem;
+  color: #cbd5f5;
+  margin-bottom: 12px;
+}
+
+.primary-button {
+  display: inline-block;
+  background: #38bdf8;
+  color: #020617;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 6px 18px rgba(56, 189, 248, 0.25);
+}
+
+.primary-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(56, 189, 248, 0.35);
+}
+
 
 /* ===== Footer ===== */
 footer {
