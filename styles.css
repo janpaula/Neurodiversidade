@@ -1,354 +1,49 @@
-/* Reset leve */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* Base */
-body {
-  background: linear-gradient(135deg, #020617, #1e293b);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  color: #e5e7eb;
-  padding: 20px;
-}
-
-/* Idioma */
-.lang-buttons {
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
-  margin-bottom: 16px;
-}
-
-.lang-buttons a {
-  font-size: 0.85rem;
-  color: #e5e7eb;
-  text-decoration: none;
-  padding: 4px 8px;
-  border-radius: 6px;
-  border: 1px solid #334155;
-}
-
-/* Cabeçalhos */
-h1 {
-  text-align: center;
-  margin-bottom: 8px;
-  font-size: 1.6rem;
-}
-
-/* ===== Research Button (like language buttons) ===== */
-.research-button {
-  border: 1px solid #38bdf8;
-  color: #38bdf8;
-  font-weight: 600;
-}
-
-.research-button:hover {
-  background: rgba(56, 189, 248, 0.15);
-}
-
-
-/* Navegação interna */
-.page-nav {
-  display: flex;
-  justify-content: flex-start;
-  margin-bottom: 20px;
-}
-
-.nav-button {
-  display: inline-block;
-  padding: 8px 14px;
-  border-radius: 8px;
-  border: 1px solid #334155;
-  color: #e5e7eb;
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-
-.nav-button:hover {
-  background: #1e293b;
-}
-/* ===== Research Card (WIP) ===== */
-.research-card {
-  max-width: 620px;
-  margin: 50px auto 0;
-  background: #1e293b;
-  border-radius: 16px;
-  padding: 26px 24px;
-  text-align: center;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
-}
-
-.research-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 12px;
-}
-
-.research-header h2 {
-  font-size: 1.25rem;
-  margin: 0;
-}
-
-.wip-badge {
-  background: rgba(56, 189, 248, 0.15);
-  color: #38bdf8;
-  border: 1px solid #38bdf8;
-  font-size: 0.7rem;
-  font-weight: 700;
-  padding: 4px 8px;
-  border-radius: 999px;
-}
-
-.research-desc {
-  font-size: 0.95rem;
-  color: #cbd5f5;
-  margin-bottom: 22px;
-  line-height: 1.5;
-}
-
-/* Botão azul principal */
-.primary-button {
-  display: inline-block;
-  background: linear-gradient(135deg, #38bdf8, #22d3ee);
-  color: #020617;
-  padding: 12px 22px;
-  border-radius: 999px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-  box-shadow: 0 6px 18px rgba(56, 189, 248, 0.25);
-}
-
-.primary-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 28px rgba(56, 189, 248, 0.35);
-}
-
-.research-desc {
-  font-size: 0.95rem;
-  color: #cbd5f5;
-  margin-bottom: 12px;
-}
-
-.primary-button {
-  display: inline-block;
-  background: #38bdf8;
-  color: #020617;
-  padding: 12px 22px;
-  border-radius: 999px;
-  font-weight: 700;
-  text-decoration: none;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-  box-shadow: 0 6px 18px rgba(56, 189, 248, 0.25);
-}
-
-.primary-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 28px rgba(56, 189, 248, 0.35);
-}
-
-/* Container do dropdown */
+/* ===== Dropdown Botão Estudos ===== */
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* Botão principal */
 .dropbtn {
-  background-color: #4CAF50; /* cor do botão, ajuste se quiser */
-  color: white;
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-/* Conteúdo do dropdown (inicialmente escondido) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: white; /* cor do fundo do menu */
-  min-width: 180px; /* largura mínima do menu */
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-  z-index: 1;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-/* Links dentro do dropdown */
-.dropdown-content a {
-  color: #333;
-  padding: 10px 15px;
-  text-decoration: none;
-  display: block;
-  transition: background-color 0.2s;
-}
-
-/* Efeito hover nos links */
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-
-/* Mostrar o dropdown ao passar o mouse ou clicar (se preferir JS) */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-
-/* ===== Footer ===== */
-footer {
-  margin-top: 40px;
-  padding-top: 15px;
-  border-top: 1px solid #334155;
-  font-size: 0.85rem;
-  color: #94a3b8;
-  text-align: center;
-}
-
-footer a {
-  color: #38bdf8;
-  text-decoration: none;
-  margin-left: 6px;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-/* Seções internas (About / Scientific) */
-section {
-  margin-bottom: 28px;
-}
-
-section h2 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  color: #e5e7eb;
-}
-
-section p {
-  line-height: 1.6;
-  margin-bottom: 10px;
-}
-
-/* Navegação interna */
-.page-nav {
-  display: flex;
-  justify-content: flex-start;
-  margin-bottom: 20px;
-}
-
-.nav-button {
-  display: inline-block;
-  padding: 8px 14px;
-  border-radius: 8px;
-  border: 1px solid #334155;
-  color: #e5e7eb;
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-
-.nav-button:hover {
-  background: #1e293b;
-}
-
-/* ===== Current Work Button ===== */
-.current-work {
-  margin: 40px auto;
-  text-align: center;
-}
-
-.work-button {
-  display: inline-block;
+  background-color: #38bdf8; /* azul do tema */
+  color: #020617;
   padding: 12px 22px;
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: #020617;
-  background: linear-gradient(135deg, #38bdf8, #22d3ee);
-  border-radius: 999px;
-  text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 6px 18px rgba(56, 189, 248, 0.25);
-}
-
-.work-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 28px rgba(56, 189, 248, 0.35);
-}
-
-/* ===== Botão de ação (azul) ===== */
-.action-buttons {
-  text-align: center;
-  margin: 24px 0;
-}
-
-.primary-button {
-  display: inline-block;
-  background: #38bdf8;
-  color: #020617;
-  padding: 12px 18px;
-  border-radius: 10px;
-  font-weight: 700;
-  text-decoration: none;
-  transition: background 0.15s ease, transform 0.15s ease;
-}
-
-.primary-button:hover {
-  background: #0ea5e9;
-}
-
-.primary-button:active {
-  transform: scale(0.97)
-}
-
-/* Container do dropdown */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Botão */
-.dropbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
   font-size: 16px;
   border: none;
   cursor: pointer;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: background 0.2s ease;
 }
 
-/* Conteúdo do dropdown */
+.dropbtn:hover {
+  background-color: #0ea5e9; /* hover azul mais escuro */
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 180px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.25);
+  z-index: 100;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-/* Links do dropdown */
 .dropdown-content a {
-  color: black;
+  color: #020617;
   padding: 10px 16px;
   text-decoration: none;
   display: block;
+  font-weight: 600;
+  transition: background 0.2s ease;
 }
 
-/* Hover nos links */
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+  background-color: #e0f2fe; /* azul claro hover */
+}
 
-/* Mostrar dropdown ao passar o mouse */
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
-/* Mudar cor do botão ao passar o mouse */
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-}
-
