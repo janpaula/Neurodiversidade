@@ -137,3 +137,14 @@
 .research-card a:hover {
   text-decoration: underline;
 }
+
+/* ===== Fundo geral da página ===== */
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: linear-gradient(135deg, #020617, #1e293b);
+  color: #e5e7eb;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
