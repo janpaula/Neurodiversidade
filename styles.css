@@ -47,3 +47,36 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+/* ===== Cards Estudos (Idiomas) ===== */
+
+.lang-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.lang-buttons a {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #020617;
+  padding: 22px 28px;
+  border-radius: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  min-width: 240px;
+  text-align: center;
+
+  box-shadow: 0 10px 24px rgba(56, 189, 248, 0.28);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lang-buttons a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 42px rgba(56, 189, 248, 0.4);
+}
+
+.lang-buttons a:active {
+  transform: scale(0.98);
+}
